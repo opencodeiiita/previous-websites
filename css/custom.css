@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,900|Montserrat');
+body{
+    font-size: 1.1rem;
+}
+
+/* ---- reset ---- */
+/* ---- reset ---- */
+body {
+  margin: 0;
+  /* font: normal 75% Arial, Helvetica, sans-serif; */
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  height: 100%;
+  background-image: url("../images/Time%20brings%20all%20things%20to%20pass.%20(1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+
+}
+#particles-js canvas
+{
+	position: absolute;
+	top:0;
+	padding: 0;
+	margin: 0;
+}
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+/*....*/
+.logo{
+padding-top: 200px;	
+align-items: center;
+  display: flex;
+  justify-content: center;
+	width: 27vw;
+	height: 27vh;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.buttons{
+	padding-top: 135px;
+align-items: center;
+  display: flex;
+  justify-content: center;
+	z-index: 5;
+	
+}
+
+.facebook.button{
+	margin: 5px;
+	height: 35px;
+	
+}
+
+.facebook.button:hover{
+	background-color: ;
+	cursor: pointer;
+	
+	
+	
+}
+
+.secondary.button{
+	margin: 5px;
+	height: 35px;
+}
+
+.secondary.button:hover{
+	background-color: ;
+	cursor: pointer;
+	
+	
+}
+
+.title{
+	font-family: 'Lato';
+	height: 100px;
+	padding-top: 15px;
+align-items: center;
+  display: flex;
+  justify-content: center;
+	font-weight: 300;
+	 
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 64px;;
+
+	
+}
+
+.github{
+	color: white;
+	width: 200px;
+	margin-top: 200px;
+align-items: center;
+  display: flex;
+  justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.presents{
+	color: white;
+	width: 200px;
+	
+align-items: center;
+  display: flex;
+  justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+
+
+

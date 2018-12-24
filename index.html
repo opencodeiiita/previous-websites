@@ -1,585 +1,910 @@
 <!DOCTYPE html>
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111768002-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html class="no-js" lang="en">
+<head>
 
-  gtag('config', 'UA-111768002-1');
-</script>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>OpenCode'19</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>OpenCode'18</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Opencode - An Open Source Event" />
-	<meta name="keywords" content="opencode, opensource, coding, github, geekhaven, foss, IIIT, IIIT Allahabad" />
-	<meta name="author" content="FOSS IIITA" />
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="OpenCode'18"/>
-	<meta property="og:image" content="https://raw.githubusercontent.com/opencode18/opencode18.github.io/master/images/fbog.png"/>
-	<meta property="og:url" content="https://opencode18.github.io/"/>
-	<meta property="og:site_name" content="OpenCode'18"/>
-	<meta property="og:description" content="OpenCode is an Open Source event aimed to raise awareness about Open Source"/>
-	<!-- <meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" /> -->
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="icon" type="image/png" href="images/OpenCode.png" />
-
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-
-	<!-- Animate.css -->
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
+    <link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Simple Line Icons -->
-	<link rel="stylesheet" href="css/simple-line-icons.css">
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" id="theme-switch" href="css/style.css">
-	<script src="js/modernizr-2.6.2.min.js"></script>
-
-	<style>
-		.zulip{
-			transform: scale(.5);
-			position: relative;
-			top: -50px;
-			left: -20px;
-		}
-
-		.github-black{
-			position: relative;
-			left: 10px;
-		}
-	</style>
-	</head>
-	<body>
-	<header role="banner" id="fh5co-header">
-			<div class="container">
-				<div class="row">
-			    <nav class="navbar navbar-default">
-		        <div class="navbar-header">
-		        	<!-- Mobile Toggle Menu Button -->
-					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		        </div>
-		        <div id="navbar" class="navbar-collapse collapse">
-		          <ul class="nav navbar-nav navbar-right">
-		            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
-		            <li><a href="#" data-nav-section="about"><span>About</span></a></li>
-		            <li><a href="#" data-nav-section="work"><span>Projects</span></a></li>
-		            <li><a href="#" data-nav-section="trailer"><span>Trailer</span></a></li>
-		            <li><a href="#" data-nav-section="testimonials"><span>Testimonials</span></a></li>
-		            <li><a href="#" data-nav-section="services"><span>Goals</span></a></li>
-		            <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
-		          </ul>
-		        </div>
-			    </nav>
-			  </div>
-		  </div>
-	</header>
-
-	<section id="fh5co-home" data-section="home" style="background-image: url(images/1.jpeg);height: auto;background-size: 100% 100%;" data-stellar-background-ratio="0.5">
-		<div class="gradient" id="particles-js"></div>
-		<div class="container">
-			<div class="text-wrap">
-				<div class="text-inner">
-					<div class="row">
-						<div class="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-6 col-xs-offset-3" style="padding-bottom: 4.43vh;">
-							<img src="images/GitHub.png" class="img-responsive" >
-							<h2 class="to-animate">Presents</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
-							<img id="logo" src="images/SVG.svg" class="img-responsive">
-						</div>
-					</div><br>
-					<h2>10th January 2018</h2>
-					<div class="row">
-							<h2 class="to-animate">OpenCode'18 was a huge success.See you next year.</h2><br>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slant"></div>
-	</section>
-
-	<section id="fh5co-about" data-section="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">About</h2>
-					<div class="row">
-
-					</div>
-				</div>
-			</div>
-			<!--======================================RULES AND GUIDELINES==================================== -->
-			<div class="row" >
-				<div class="col-md-6">
-					<div class="box_it" style="text-align: justify;">
-						<h3 class="rules_heading">Scoring Criteria</h3>
-						<p>Each project will have issues open in it of varying difficulty and each issue will have points associated with it as below:</p>
-						<ul>
-							<li>Rookie: 10 points</li>
-							<li>Skilled: 20 points</li>
-							<li>Advanced: 30 points</li>
-							<li>Expert: 50 points</li>
-						</ul>
-					</div>
-					<div class="row" style="margin-top: 2vh;">
-				<div class="col-md-12">
-					<div class="box_it" id="push_down">
-						<h3 class="rules_heading">Want to participate?</h3>
-						<p>Fill in this <a target="_blank" href="#">form</a> first and then add yourself in <a href="https://github.com/opencode18/OpenCode-Collaborative">this project</a>.(Will be released soon)</p>
-						<p>Do you have an exciting idea for a project or want us to help you with your previous one?Then <a href="#">be a mentor in OpenCode'18</a>.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row" style="margin-top: 2vh;">
-			<div class="col-md-12">
-				<div class="box_it">
-					<h3 class="rules_heading">How this works</h3>
-					<ul>
-						<li>Participants are required to solve the issues and earn points.</li>
-						<li>At the end of competition, winner will be declared from top 5 by judging the quality of issues solved by them.<b style="color: black;font-weight: 400;">So the participant with the most points need not be the winner.</b></li>
-						<li>Projects registered for the event can be solved to earn points. All of them can be found at <a href="https://github.com/opencode18">OpenCode Organisation</a> with label <a href="https://github.com/search?l=&q=label%3Aopencode&ref=advsearch&type=Issues&utf8=%E2%9C%93">opencode</a>.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-				</div>
-				<div class="col-md-6" style="text-align: justify;">
-					<div class="box_it">
-						<h3 class="rules_heading">Prizes & Important Points</h3>
-						<h3 style="font-size: 2.8vh;">Prizes (Cash prizes as well as Goodies) will be awarded in the following categories:</h3>
-						<ul style="text-align: justify;padding-bottom: 2.4vh;">
-							<li>Grand prize winner (selected from the TOP 5 by the organizers) : Cash prize worth 2.5k, T-shirt, stickers and Certficate.</li>
-							<li>Top 5 Participants based on points: T Shirts, stickers, Certificates.</li>
-							<li>Participant with most points : Cash prize of 1k</li>
-							<li>Participant with second most points : Cash prize of Rs.500</li>
-							<li>Every participant with 4 PR merged will be awarded a digital participation certificate.</li>
-							<li>Top 5 will get direct admission to <a href="http://www.hackinthenorth.com/">Hack In the North</a></li>
-							<li>Amazon gift voucher worth Rs. 300/- will be presented to one lucky participant who do the most social media outreach using facebook, twitter or any other platform.</li>
-							<li>All mentors with 4 good PR's merged will get stickers and certificate.</li>
-							<li>Mentors as chosen by the organisers will be given passes to attend Aparoksha, the annual techfest of IIIT Allahabad.</li>
-							<li>There will be a repo only for female developers, for the same there will be a special prize.</li>
-							<li>Referral points will be given to any participant only for first 20 days.</li>
-							<li>A participant at anytime can have 2 issues assigned.If there is no activity on the issue for 3 days then the issue will unassigned and available to all.</li>
-							<li>For IIITA first year students, it is necessary to score 100 points to be eligible for FOSS Wing interviews.</li>
-							<br>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-	</section>
 
 
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+	<script src="js/particles.js" defer="defer"></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
 
-	<h1 id="timeline_heading" data-section="trailer">Watch The Trailer!</h1>
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="newfavicon.ico" type="image/x-icon">
+    <link rel="icon" href="newfavicon.ico" type="image/x-icon">
 
-
-	<div class="bs-example">
-	    <!-- Button HTML (to Trigger Modal) -->
-	    <a href="#myModal" class="" data-toggle="modal"><i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></i></a>
-
-	    <!-- Modal HTML -->
-	    <div id="myModal" class="modal fade">
-	        <div class="modal-dialog">
-	            <div class="modal-content embed-responsive embed-responsive-16by9">
-	                <!-- <div class="modal-header">
-	                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	                    <h4 class="modal-title">YouTube Video</h4>
-	                </div> -->
-	                <div class="modal-body z-depth-5 embed-responsive-item" id="remove_box">
-	                    <iframe id="cartoonVideo" width="560" height="315" src="https://www.youtube.com/embed/qjVYRDQAl2Q" frameborder="0" allowfullscreen></iframe>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-
-		<h1 id="timeline_heading">Schedule</h1>
-
-
-<div class="container">
-	<ul class="timeline">
-    <li class="timeline-milestone no-flicker is-completed timeline-start one">
-      <div class="timeline-action">
-        <h2 class="title">Project submissions start</h2>
-      </div>
-    </li>
-    <li class="timeline-milestone no-flicker is-completed timeline-start two">
-      <div class="timeline-action">
-        <h2 class="title">Event starts</h2>
-      </div>
-    </li>
-<li class="timeline-milestone no-flicker is-completed timeline-start three">
-      <div class="timeline-action">
-        <h2 class="title">Event Ends plus final blog writing.</h2>
-      </div>
-    </li>
-    <li class="timeline-milestone no-flicker is-completed timeline-start timeline-last four">
-      <div class="timeline-action">
-        <h2 class="title">Final declaration of winners</h2>
-      </div>
-    </li>
-  </ul>
-</div>
-<!-- ============================TIMELINE ENDS======================================== -->
-
-
-	<section id="fh5co-work" data-section="work">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Projects</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Top 3 projects from OpenCode 2017</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row row-bottom-padded-sm">
-				<div class="col-md-4 col-sm-4 col-xxs-12">
-					<a href="http://fossiiita.github.io/opencode2017/" target="_blank" class="fh5co-project-item to-animate">
-						<img src="images/opencode17.png" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-						<h2>OpenCodeCollab</h2>
-						<span>A collaborative website by opencode participants built using jekyll</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-4 col-xxs-12">
-					<a href="https://fossiiita.github.io/humblefoolcup/" class="fh5co-project-item to-animate">
-						<img src="images/humble.png" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-						<h2>Humblefool Cup</h2>
-						<span>Website for the humblefool cup held during Aparoksha 16</span>
-						</div>
-					</a>
-				</div>
-
-
-				<div class="col-md-4 col-sm-4 col-xxs-12">
-					<a href="https://github.com/betterclever/ZapTap" class="fh5co-project-item to-animate">
-						<img src="images/c.jpg" alt="Image" class="img-responsive">
-						<div class="fh5co-text">
-						<h2>Zap Tap</h2>
-						<span>Cross Platform Android Game made in libGDX using Java.</span>
-						</div>
-					</a>
-				</div>
-			</div>
-			<a href="https://github.com/fossiiita/Projects/issues"><h2 class="to-animate" style="text-align: center;color: white;">See All</h2></a>
-			<h2 class="to-animate" style="color: white;text-align: center;">This year as we expand we will introduce a project only for female developers to contribute.<br><a href="/projects" style="color: white;">All projects for OpenCode'18 can be found here</a>
-				<br><a href="https://github.com/search?o=desc&q=label%3Aopencode18&s=created&state=open&type=Issues&utf8=%E2%9C%93" style="color: white;">All issues from all OpenCode'18 Projects can be found here</a></h2>
-
-	</section>
-
-	<section id="fh5co-testimonials" data-section="testimonials">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">Testimonials</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>Opencode gives a jumpstart to open source development skills.<br>It serves as a warm up for GSoC , also gives a taste of what would be ahead. </h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="box-testimony">
-						<blockquote class="to-animate-2">
-							<p>&ldquo;In one month I got to know many things related to development,most of which was in web development.I got to know about the github and git and most importantly the linux command line.
-
-Contributing to projects gave me internal happiness as my work was used in the main project and available publicly.It was an experience to remember and I can’t forget it as it gave me a head start into the world of Open-Source contributing.&rdquo;</p>
-						</blockquote>
-						<div class="author to-animate">
-							<figure><img src="images/anupam.png" alt="Anupam Dagar"></figure>
-							<p>
-							Anupam Dagar <a href="https://medium.com/@siriusdagar/my-experience-with-opencode-the-mini-gsoc-62666e1c827d" target="_blank">Medium.com OpenCode'17</a><span class="subtext">OpenCode'17 Top Scorer</span>
-							</p>
-						</div>
-
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="box-testimony">
-					<blockquote class="to-animate-2">
-						<p>&ldquo;The event is great for beginners and experienced students who want to get started with open source development or looking for a challenging contest in the same field. The best part about this event is the timing. It is placed just a month before GSoC starts.
-
-It is a one month long event. It also teaches you to stay active through out the period. I was leading when the event started, but I soon fell back a little 😝.&rdquo;</p>
-					</blockquote>
-					<div class="author to-animate">
-						<figure><img src="images/vamsi.jpeg" alt="Vamsi Sangam"></figure>
-						<p>
-						Vamsi Sangam <a href="https://medium.com/@vamsisangam/opencode-2017-d91ab65dc6e4" target="_blank">Medium.com OpenCode'17</a> <span class="subtext">OpenCode'17 Winner , GSoC'17 with Teammates</span>
-						</p>
-					</div>
-
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="box-testimony">
-				<blockquote class="to-animate-2">
-					<p>&ldquo;I’ve learned a lot after joining opencode.There are lot of projects in opencode which helps you apply your skills in web development.
-
-Before joining the opencode competition I didn’t even know what GitHub was and how useful it is. In fact I didn’t even have a GitHub account!. Opencode was the reason that i joined GitHub.
-
-Opencode is my first step towards opensource development and I’m glad that I’m a part of it.&rdquo;</p>
-				</blockquote>
-				<div class="author to-animate">
-					<figure><img src="images/aswanth.png" alt="Aswanth K Anil"></figure>
-					<p>
-					Aswanth K Anil <a href="https://medium.com/@aswanthkanil/opencode-bba684bf68cf" target="_blank">Medium.com OpenCode'17</a><span class="subtext">OpenCode'17 Runner Up</span>
-					</p>
-				</div>
-
-		</div>
-	</div>
-
-
-
-
-			</div>
-		</div>
-	</section>
-
-
-	<section id="fh5co-services" data-section="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-left">
-					<h2 class=" left-border to-animate">Our Goals</h2>
-					<div class="row">
-						<div class="col-md-8 subtext to-animate">
-							<h3>OpenCode started with the aim to get more people into the world of opensource.</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-anchor"></i>
-					<h3>Awareness</h3>
-					<p>Increase awareness about the world of open source.</p>
-				</div>
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-layers2"></i>
-					<h3>GitHub</h3>
-					<p>Get people started with Git and GitHub.</p>
-				</div>
-
-				<div class="clearfix visible-sm-block"></div>
-
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-video2"></i>
-					<h3>Empowerment</h3>
-					<p>Empower beginners to get started with development.</p>
-				</div>
-				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
-					<i class="icon to-animate-2 icon-monitor"></i>
-					<h3>Improve Skills</h3>
-					<p>Help mentors to improve their guiding skills.</p>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-
-
-
-	<section id="fh5co-contact" data-section="contact">
-		<div class="container">
-		</div>
-	</section>
-<section id="sponsors" data-section="sponsor">
-	<div class="container">
-		<div class="section-heading">
-	<h2 class="text-center title" style="color: #f73e36;">Sponsors</h2>
-</div>
-<div class="row">
-	<div class="col-sm-3">
-		<img src="images/wwcode.png" class="img-responsive">
-		<a href="https://www.womenwhocode.com/"><h2 class="text-center" style="color: #f73e36;font-weight: 600;">Media Partner</h2></a>
-	</div>
-	<div class="col-sm-3">
-		<a href="https://github.com/"><img src="images/GitHubblack.png" class="img-responsive github-black"></a>
-	</div>
-	<div class="col-sm-3">
-		<a href="https://zulipchat.com/"><img src="images/zulip.png" class="img-responsive zulip"></a>
-	</div>
-	<div class="col-sm-3">
-		<img src="images/go-students.png" class="img-responsive go-students">
-		<a href="https://gostudent.github.io/"><h2 class="text-center go-students" style="color: #f73e36;font-weight: 600;">Community Partner</h2></a>
-	</div>
-
-</div>
-</div>
-</section>
-<div class="container" style="margin-top: 10vh;">
-<h2 align="center" style="color: #f73e36;">Any questions? Drop us a mail <a href="mailto:iit2016128@iiita.ac.in">here</a></h2>
-
-</div>
-	<footer id="footer" role="contentinfo">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-4 col-xs-12 text-center" style="letter-spacing: 4px;">
-						<a href="https://www.facebook.com/opencodeiiita/" target="_blank"><i class="fa fa-facebook" style="font-size: 1.5em;"></i></a>
-						<a href="https://github.com/opencode18" target="_blank"><i class="fa fa-github" style="font-size: 1.5em;" aria-hidden="true"></i></a>
-						<a href="mailto:iit2016128@iiita.ac.in"><i class="fa fa-envelope" style="font-size: 1.5em;" aria-hidden="true"></i></a>
-				</div><br class="visible-xs"><br class="visible-xs">
-				<div class="col-md-4 col-sm-4 col-xs-12 text-center">
-					<p>Created with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://geekhaven.iiita.ac.in/foss/" target="_blank">FOSS IIITA</a></p>
-				</div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
-				<div class="col-md-4 col-sm-4 col-xs-12" style="margin-top: -25px;">
-				<div class="row">
-					<div class="col-md-4 col-sm-3 col-xs-3 col-xs-offset-2 col-md-offset-1">
-						<a href="https://github.com/fossiiita" target="_blank"><img class="img-responsive" id="foss" src="images/foss.png"></a>
-					</div>
-					<div class="col-md-3 col-sm-3 col-xs-3">
-						<a href="https://geekhaven.iiita.ac.in/" class="visible-sm"><img style="margin-top: 20px;" src="images/Geekhaven.svg" class="img-responsive"></a>
-						<a href="https://geekhaven.iiita.ac.in/" class="hidden-sm"><img src="images/Geekhaven.svg" class="img-responsive"></a>
-					</div>
-					<div class="col-md-4 col-sm-3 col-xs-3">
-						<a href="https://www.iiita.ac.in/" target="_blank"><img class="img-responsive" id="iiita" src="images/iiita.png"></a>
-						</div>
-				</div>
-				</div>
-
-		</div>
-	</div>
-	</footer>
-
-
-
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="https://code.jquery.com/jquery-migrate-1.0.0.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Counter -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<!-- Google Map -->
-
-	<script type="text/javascript">
-	$(document).ready(function(){
-	    /* Get iframe src attribute value i.e. YouTube video url
-	    and store it in a variable */
-	    var url = $("#cartoonVideo").attr('src');
-
-	    /* Assign empty url value to the iframe src attribute when
-	    modal hide, which stop the video playing */
-	    $("#myModal").on('hide.bs.modal', function(){
-	        $("#cartoonVideo").attr('src', '');
-	    });
-
-	    /* Assign the initially stored url back to the iframe src
-	    attribute when modal is displayed again */
-	    $("#myModal").on('show.bs.modal', function(){
-	        $("#cartoonVideo").attr('src', url);
-	    });
-	});
-	</script>
-	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
-	<script src="js/jquery.style.switcher.js"></script>
-	<script>
-		$(function(){
-			$('#colour-variations ul').styleSwitcher({
-				defaultThemeId: 'theme-switch',
-				hasPreview: false,
-				cookie: {
-		          	expires: 30,
-		          	isManagingLoad: true
-		      	}
-			});
-			$('.option-toggle').click(function() {
-				$('#colour-variations').toggleClass('sleep');
-			});
-		});
-	</script>
-	<!-- End demo purposes only -->
-
-	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
-	<script type="text/javascript" src="js/particles.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-	<script type="text/javascript">
-		(function ($) {
-  $(document).ready(function(){
-
-    // hide .navbar first
-    $("header").hide();
-
-    // fade in .navbar
-    $(function () {
-        $(window).scroll(function () {
-
-                 // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 100) {
-                $('header').fadeIn();
-            } else {
-                $('header').fadeOut();
+    <style>
+        @media (max-width: 600px) {
+            #chotu{
+                font-size: 2rem;
+                /* padding-right: 50px; */
+                margin: auto;
             }
-        });
-    });
+            #chotucol1{
+                /* font-size: 2rem; */
+                /* padding-right: 50px; */
+                padding-top: 50px;
+                margin: auto;
+            }
+            #chotucol2{
+                font-size: 2rem;
+                /* padding-right: 50px; */
+                /* padding-top: 150px; */
+                margin: auto;
+            }
 
-});
-  }(jQuery));
-	</script>
-	<script type="text/javascript">
-$(document).ready(function(){
-    function alignModal(){
-        var modalDialog = $(this).find(".modal-dialog");
-        /* Applying the top margin on modal dialog to align it vertically center */
-        modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
-    }
-    // Align modal when it is displayed
-    $(".modal").on("shown.bs.modal", alignModal);
+            #chotupara{
+                font-size: 1.5rem;
+                /* padding-right: 50px; */
+                /* color: red; */
+                margin: auto;
+            }
+            /* #chotuimg{
+                height: 213px;
+                width: 203px;
+            } */
 
-    // Align modal when user resize the window
-    $(window).on("resize", function(){
-        $(".modal:visible").each(alignModal);
-    });
-});
-</script>
-<script type="text/javascript">
-$(document).ready (
- function() {
-  if ( $.browser.mozilla == true){
-   $('#logo').attr('src', 'images/svg.png');
-  }
- }
-);
-</script>
-	</body>
+        }
+        
+    </style>
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <!-- <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
+        </div> end header-logo -->
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3 style="color: #00a9fd">OpenCode'19</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#register" title="register">Register</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Our Goals</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Previous Projects</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                </ul>
+    
+                <p>Welcome to OpenCode'19! Your journey into the world of open-source development begins here.</p>
+    
+                <!-- <ul class="header-nav__social">
+                    <li>
+                        <a href="#0"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-dribbble"></i></a>
+                    </li>
+                </ul> -->
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+    
+
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src=""  data-position-y=top>
+
+        <!-- <div class="shadow-overlay"></div> -->
+
+        <div id="particles-js" class="home-content">
+			<!-- particles.js container -->
+
+<!-- stats - count particles -->
+
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- stats.js lib -->
+
+<div class="animated fadeInUp delay-2s logo">
+	
+			<img  src="images/Logo1.png">
+			</div>
+<div class="animated fadeIn delay-3s github">
+	<img  src="images/GitHub.png"><br></div>
+	<div class="animated fadeIn delay-3s presents"><p>Presents</p></div>
+<div class="animated fadeIn delay-4s title">
+			Opencode '19</div>
+			
+			<!--
+<div class="animated fadeIn delay-3s buttons">
+	<div class="ui secondary button"><a href="">
+		<i class="github icon"></i>
+  View it on Github</a>
+</div>
+	<div class="ui facebook button"><a href="">
+  <i class="facebook icon"></i>
+  Follow on Facebook</a>
+</div>
+			</div>
+                             
+        </div> <!-- end home-content -->
+		
+        <!-- <ul class="home-sidelinks">
+            <li><a class="smoothscroll" href="#about">About<span>who we are</span></a></li>
+            <li><a class="smoothscroll" href="#services">Services<span>what we do</span></a></li>
+            <li><a  class="smoothscroll" href="#contact">Contact<span>get in touch</span></a></li>
+        </ul> end home-sidelinks -->
+
+        <!-- <ul class="home-social">
+            <li class="home-social-title">Follow Us</li>
+            <li><a href="#0">
+                <i class="fab fa-facebook"></i>
+                <span class="home-social-text">Facebook</span>
+            </a></li>
+            <li><a href="#0">
+                <i class="fab fa-twitter"></i>
+                <span class="home-social-text">Twitter</span>
+            </a></li>
+            <li><a href="#0">
+                <i class="fab fa-linkedin"></i>
+                <span class="home-social-text">LinkedIn</span>
+            </a></li>
+        </ul> end home-social -->
+
+    </section> <!-- end s-home -->
+
+    <!-- ====================REGISTER===================================== -->
+    
+        <div class="ui stackable grid container" id="register" style="margin-top: 100px;">
+            <div class="two wide column"></div>
+            <div class="six wide column" style="text-align:center">
+                <a href="https://google.com" target="_blank">
+                    <div class="ui animated massive button" style="background: linear-gradient(to right, #00a9fd, #006bd1); color: white;" tabindex="0">
+                            <div class="visible content">Participant Registration</div>
+                            <div class="hidden content">
+                              <i class="right arrow icon"></i>
+                            </div>
+                        </div>            
+        
+                </a>
+            </div>
+            <div class="six wide column" style="text-align:center">
+                    <a href="https://google.com" target="_blank">
+                        <div class="ui animated massive button" style="background: linear-gradient(to right, #00a9fd, #006bd1); color: white;" tabindex="0">
+                                <div class="visible content">Mentor Registration</div>
+                                <div class="hidden content">
+                                  <i class="right arrow icon"></i>
+                                </div>
+                            </div>            
+            
+                    </a>
+                </div>
+                <div class="two wide column"></div>
+
+            <!-- <div class="ui animated blue massive button" tabindex="0">
+                <div class="visible content">Participant Registration</div>
+                <div class="hidden content">
+                  <i class="right arrow icon"></i>
+                </div>
+            </div>
+
+            <div class="ui animated blue massive button" tabindex="0">
+                <div class="visible content">Mentor Registration</div>
+                <div class="hidden content">
+                  <i class="right arrow icon"></i>
+                </div>
+            </div> -->
+        </div>
+    
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <!-- <h3 class="subhead">Who We Are</h3> -->
+                <h1 class="display-1" id="about-header">About</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <!-- <div class="row" data-aos="fade-up">
+            <div class="col-full">
+                <p class="lead">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. 
+                </p>
+            </div>
+        </div>  -->
+
+        <div class="row">
+                
+            <div class="about-process process block-1-2 block-tab-full">
+
+                <div class="process__vline-left"></div>
+                <div class="process__vline-right"></div>
+
+                <div class="col-block process__col" data-item="1" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Scoring Criteria</h4>
+                        <p>Each project will have issues open in it of varying difficulty and each issue will have points associated with it as below:</p>
+                        <ul>
+                            <li>Rookie: 10 points</li>
+                            <li>Skilled: 20 points</li>
+                            <li>Advanced: 30 points</li>
+                            <li>Expert: 50 points</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="2" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>How this works</h4>
+                        <ul>
+                            <li>Participants are required to solve the issues and earn points.</li>
+                            <li>At the end of competition, winner will be declared from top 5 by judging the quality of issues solved by them.<strong>So the participant with the most points need not be the winner.</strong></li>
+                            <li>Projects registered for the event can be solved to earn points. All of them can be found at OpenCode Organisation with label opencode.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--div class="col-block process__col" data-item="3" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Prizes</h4>
+                        <ul>
+                            <li>Grand prize winner (selected from the TOP 5 by the organizers) : Cash prize worth 2.5k, T-shirt, stickers and Certficate.</li>
+                            <li>Top 5 Participants based on points: T Shirts, stickers, Certificates.</li>
+                            <li>Participant with most points : Cash prize of 1k</li>
+                            <li>Participant with second most points : Cash prize of Rs.500</li>
+                            <li>Every participant with 4 PR merged will be awarded a digital participation certificate.</li>
+                            <li>Top 5 will get direct admission to Hack In the North</li>
+                            <li>Amazon gift voucher worth Rs. 300/- will be presented to one lucky participant who do the most social media outreach using facebook, twitter or any other platform.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="4" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Important Points</h4>
+                        < <p>Prizes (Cash prizes as well as Goodies) will be awarded in the following categories:</p>>
+                        <ul>
+                            <li>All mentors with 4 good PR's merged will get stickers and certificate.</li>
+                            <li>Mentors as chosen by the organisers will be given passes to attend Aparoksha, the annual techfest of IIIT Allahabad.</li>
+                            <li>There will be a repo only for female developers, for the same there will be a special prize.</li>
+                            <li>Referral points will be given to any participant only for first 20 days.</li>
+                            <li>A participant at anytime can have 2 issues assigned.If there is no activity on the issue for 3 days then the issue will unassigned and available to all.</li>
+                            <li>For IIITA first year students, it is necessary to score 100 points to be eligible for FOSS Wing interviews.</li>
+                        </ul>
+                    </div>
+                </div-->
+
+
+            </div> <!-- end process -->
+
+        </div> <!-- end about-stats -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services light-gray">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full" id="goal-head">
+                <!-- <h3 class="subhead">What We Do</h3> -->
+                <h1 class="display-1" id="goals-head">Our Goals</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row" data-aos="fade-up">
+            <div class="col-full">
+                <p class="lead">
+                    OpenCode was started with the aim to get more people interested in the magical world of opensource.
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+        <div class="row services-list block-1-2 block-m-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up" style="padding-bottom: 40px;">
+                    <div class="service-icon  service-icon--web-design">
+                        <i class="icon-earth"></i>
+                    </div>  
+                    <div class="service-text">
+                        <h3 class="h4" style="padding-top: 10px;">Awareness</h3>
+                        <p>Increase awareness about the world of open source.</p>
+                    </div>                   
+            </div>
+        
+
+            <div class="col-block service-item " data-aos="fade-up" style="padding-bottom: 40px;">
+                <div class="service-icon service-icon--brand-identity">
+                    <i class="icon-tv"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h4" style="padding-top: 10px;">GitHub</h3>
+                    <p>Get people started with Git and GitHub.</p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up" style="padding-bottom: 40px;">
+                <div class="service-icon  service-icon--illustration">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h4" style="padding-top: 10px;">Community Building</h3>
+                    <p>Build a community of developers.</p>
+                </div>
+            </div>
+
+
+            <!-- <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon service-icon--product-strategy">
+                    <i class="icon-cube"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h4" style="padding-top: 10px;">Product Strategy</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+ -->
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon  service-icon--ui-design">
+                    <i class="icon-window"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h4" style="padding-top: 10px;">Improve Skills</h3>
+                    <p>Help mentors to improve their guiding skills.</p>
+                </div>
+            </div>
+    
+            <!-- <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon service-icon--mobile-dev">
+                    <i class="icon-lego-block"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h4" style="padding-top: 10px;">Mobile Development</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+ -->
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+                
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full" id="work-head">
+                <!-- <h3 class="subhead">Featured Works</h3> -->
+                <h1 class="display-1" id="works-head">Projects from OpenCode'18</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row masonry-wrap">
+            <div class="masonry">
+
+                <div class="masonry__brick" data-aos="fade-up" style="padding: 5px;">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/pd1.png" 
+                                     srcset="images/portfolio/pd1.png 1x" alt="">
+                            </a>
+                        </div>
+                        
+                        <!-- <a href="https://google.com">please chal jaa</a> -->
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                ProDesigner
+                            </h3>
+                            <p class="item-folio__cat">
+                                A super cool collection of CSS tasks.
+                            </p>
+
+                        </div>
+
+                        <a href="https://github.com/opencode18/ProDesigner" target="_blank" id="prodesigner" class="item-folio__project-link">
+                            Project Link
+                        </a>
+
+                        <!-- <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div> -->
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up" style="padding: 5px;">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/apkfinal.jpg" 
+                                     srcset="images/portfolio/apkfinal.jpg 1x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Aparoksha'18 Website
+                            </h3>
+                            <p class="item-folio__cat">
+                                Official website for Aparoksha'18
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/GeekHaven/Aparoksha-18" class="item-folio__project-link" id="aparoksha">
+                            Project Link
+                        </a>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up" style="padding: 5px;">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/ld.png"
+                                     srcset="images/portfolio/ld.png 1x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Long Drive
+                            </h3>
+                            <p class="item-folio__cat">
+                                A fun CSS side project.
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/CosmicCoder96/longDrive" class="item-folio__project-link" id="longdrive">
+                            Project Link
+                        </a>
+
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up" style="padding: 5px;">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/lcv.png"
+                                     srcset="images/portfolio/lcv.png 1x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Lucid CV
+                            </h3>
+                            <p class="item-folio__cat">
+                                A simple CV maker built using Node.js
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/aswinzz/LucidCV" class="item-folio__project-link" id="lucidcv">
+                            Project Link
+                        </a>
+
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+
+                <div class="masonry__brick" data-aos="fade-up" style="padding: 5px;">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/hox.png"
+                                     srcset="images/portfolio/hox.png 1x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                HoxNox
+                            </h3>
+                            <p class="item-folio__cat">
+                                A webapp made in Django to generate a portfolio.
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/Anupam-dagar/Portfolio-Generator" class="item-folio__project-link" id="hoxnox">
+                            Project Link
+                        </a>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up" style="padding: 5px;">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a class="thumb-link" data-size="1050x700">
+                                <img src="images/portfolio/opn.png"
+                                     srcset="images/portfolio/opn.png 1x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                OpenNews
+                            </h3>
+                            <p class="item-folio__cat">
+                                A simple website built using Vue.js which displays the top 5 news from various news sources.
+                            </p>
+                        </div>
+
+                        <a href="https://github.com/opencode18/OpenNews" class="item-folio__project-link" id="opennews">
+                            Project Link
+                        </a>
+
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+            </div> <!-- end masonry -->
+        </div> <!-- end masonry-wrap -->
+
+        <div class="testimonials-wrap" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="h1" id="testimonials-head" style="color: #00a9fd;">Testimonials</h2>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/jc.jpg" alt="Author image" class="testimonials__avatar">
+                        <p> People used to take any issue that comes their way, be it something they even haven’t heard about. I guess, that’s the beauty of OpenCode, it helps us let go of our fear of tackling problems without thinking about whether we can solve them or not.</p>
+                        <div class="testimonials__author">
+                            Jigar Chavada 
+                            <span>OpenCode'18, Overall Winner</span><span><a href="https://medium.com/@chavada.jigar.3/my-experience-of-opencode18-4433b6eaf823" target="_blank">Read the full blog</a></span>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/vp.jpg" alt="Author image" class="testimonials__avatar">
+                        <p>Before Opencode I had a vague understanding of git and some basic knowledge of Python and Web development. But towards the end of it I got introduced to many technologies and coding practices. Thus, I can safely say that I have taken a huge step towards excelling as a developer.</p>
+                        <div class="testimonials__author">
+                            Vishal Pani
+                            <span>OpenCode'18, Top Scorer</span><span><a href="https://medium.com/@panivishal17/my-journey-with-opencode18-5336ea8c9f07" target="_blank">Read the full blog</a></span>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/rk.jpeg" alt="Author image" class="testimonials__avatar">
+                        <!-- <p>I had joined GitHub just two weeks before OpenCode had started. Initially, I felt quite underconfident while taking up the issues. I went from being that underconfident guy to the guy who’s now comfortable enough to explore the beautiful world of open-source.</p> -->
+                        <div class="testimonials__author">
+                            Rahul Arulkumaran
+                            <span>OpenCode'18, 2nd Position</span><span><a href="#" target="_blank">Read the full blog</a></span>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/rm.jpg" alt="Author image" class="testimonials__avatar">
+                        <p>It was a great experience for me. I enjoyed a lot doing different things for the competition like opening issues, solving them, claiming issues opened by the organizers, creating pull requests. It gave me real happiness whenever my PR was merged.</p>
+                        <div class="testimonials__author">
+                            Ritika Motwani
+                            <span>OpenCode'18, Special Girls Prize</span><span><a href="https://medium.com/my-experience-with-opencode-2018/my-experience-of-opencode-2018-7a26415da76" target="_blank">Read the full blog</a></span>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/eb.jpg" alt="Author image" class="testimonials__avatar">
+                        <p>I had joined GitHub just two weeks before OpenCode had started. Initially, I felt quite underconfident while taking up the issues. I went from being that underconfident guy to the guy who’s now comfortable enough to explore the beautiful world of open-source.</p>
+                        <div class="testimonials__author">
+                            Ekansh Bansal
+                            <span>OpenCode'18, Top Contributor</span><span><a href="https://medium.com/@ekanshbansal/my-experience-with-opencode18-5271f9d10d44" target="_blank">Read the full blog</a></span>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+                    
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/ag.jpg" alt="Author image" class="testimonials__avatar">
+                        <!-- <p>I had joined GitHub just two weeks before OpenCode had started. Initially, I felt quite underconfident while taking up the issues. I went from being that underconfident guy to the guy who’s now comfortable enough to explore the beautiful world of open-source.</p> -->
+                        <p>I started with adding myself as contestant in opencode collaborative website and then the journey to contribute more and more started. OpenCode ended with introducing me to new and exciting stuff like loaders, cool libraries like particle.js, making game with the help of javascript and many more things.</p>
+                        <div class="testimonials__author">
+                            Ananya Agrawal
+                            <span>OpenCode'18, Top Contributor</span><span><a href="https://medium.com/@ananyaagrawal125/experience-with-opencode-18-4df353b93e95" target="_blank">Read the full blog</a></span>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+                    
+                    
+                </div> <!-- end testimonials__slider -->
+
+            </div> <!-- end testimonials -->
+
+        </div> <!-- end testimonials-wrap -->
+
+    </section> <!-- end s-works -->
+
+
+    <!-- stats
+    ================================================== -->
+    <!-- <section id="stats" class="s-stats">
+
+        <div class="row stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+            <div class="col-block stats__col ">
+                <div class="stats__count">129</div>
+                <h5>Awards Received</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">1507</div>
+                <h5>Cups of Coffee</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">108</div>
+                <h5>Projects Completed</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">103</div>
+                <h5>Happy Clients</h5> 
+            </div>
+
+        </div> 
+
+    </section>  -->
+
+    <!-- Sponsors -->
+    <section data-section="sponsor">
+        <div class="sponsor-container">
+            <div class="sponsor-heading"><h2 style="font-weight: bold">SPONSORS</h2></div>
+        </div>
+        <div class="sponsors">
+            <div class="sponsor-1">
+                <a href="https://github.com">
+                    <img src="images/sponsors/code.png">
+                </a>
+            </div>
+            <div class="sponsor-2">
+                <a href="https://zulipchat.com/">
+                    <img src="images/sponsors/zulip-logo.png">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <!-- <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--light">Contact Us</h3>
+                <h1 class="display-1 display-1--light">Get in touch and let's make something great together. Let's turn your idea on an even greater product.</h1>
+            </div>
+        </div>  -->
+
+        <!-- <div class="row">
+
+            <div class="col-full contact-main" data-aos="fade-up">
+                <p>
+                <a href="mailto:#0" class="contact-email">hello@transcend-studio.com</a>
+                <span class="contact-number">+1 (917) 123 456  /  +1 (917) 333 987</span>
+                </p>
+            </div> 
+
+        </div>  -->
+
+        <div class="row">
+
+            <!-- <div class="col-five tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">Where To Find Us</h3>
+
+                <p class="contact-address">
+                    1600 Amphitheatre Parkway<br>
+                    Mountain View, CA<br>
+                    94043 US
+                </p>
+            </div>  -->
+
+            <div class="col-five tab-full contact-secondary" data-aos="fade-up">
+                <h3 class="subhead subhead--light">Reach Out</h3>
+
+                <ul class="contact-social">
+                    <li>
+                        <a href="https://www.facebook.com/opencodeiiita/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:geekhaven.iiita.ac.in"><i class="fa fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/opencode18" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                </ul> <!-- end contact-social -->
+
+                <!-- <div class="contact-subscribe">
+                    <form id="mc-form" class="group mc-form" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div>  -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end row -->
+
+        <div class="row">
+            <div class="col-full cl-copyright">
+                <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i style="color: red;" class="fa fa-heart" aria-hidden="true"></i> by <span style="color:white">Team OpenCode.</span> 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span> 
+            </div>
+        </div>
+
+        <div class="cl-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+        </div>
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <!-- <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">            
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+        var btn1 = $("#prodesigner");
+        var btn2 = $("#aparoksha");
+        var btn3 = $("#longdrive");
+        var btn4 = $("#hoxnox");
+        var btn5 = $("#lucidcv");
+        var btn6 = $("#opennews");
+
+        btn1.click(function(){
+            window.open('https://github.com/opencode18/ProDesigner', '_blank');
+        })
+        btn2.click(function(){
+            window.open('https://github.com/GeekHaven/Aparoksha-18', '_blank');
+        })
+        btn3.click(function(){
+            window.open('https://github.com/CosmicCoder96/longDrive', '_blank');
+        })
+        btn4.click(function(){
+            window.open('https://github.com/Anupam-dagar/Portfolio-Generator', '_blank');
+        })
+        btn5.click(function(){
+            window.open('https://github.com/aswinzz/LucidCV', '_blank');
+        })
+        btn6.click(function(){
+            window.open('https://github.com/opencode18/OpenNews', '_blank');
+        })
+
+    </script>
+
+</body>
+
 </html>
+<!-- <div class="col-sm-3">
+    <img src="images/wwcode.png" class="img-responsive">
+    <a href="https://www.womenwhocode.com/"><h2 class="text-center" style="color: #f73e36;font-weight: 600;">Media Partner</h2></a>
+</div>
+<div class="col-sm-3">
+    <a href="https://github.com/"><img src="images/GitHubblack.png" class="img-responsive github-black"></a>
+</div>
+<div class="col-sm-3">
+    <a href="https://zulipchat.com/"><img src="images/zulip.png" class="img-responsive zulip"></a>
+</div>
+<div class="col-sm-3">
+    <img src="images/go-students.png" class="img-responsive go-students">
+    <a href="https://gostudent.github.io/"><h2 class="text-center go-students" style="color: #f73e36;font-weight: 600;">Community Partner</h2></a>
+</div>
+
+</div>
+</div> -->
