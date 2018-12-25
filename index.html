@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
 
     <!--- basic page needs
@@ -22,15 +23,15 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
     <link rel="stylesheet" href="css/custom.css">
-	<link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
 
 
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
-	<script src="js/particles.js" defer="defer"></script>
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <script src="js/particles.js" defer="defer"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
 
     <!-- favicons
     ================================================== -->
@@ -39,37 +40,39 @@
 
     <style>
         @media (max-width: 600px) {
-            #chotu{
-                font-size: 2rem;
-                /* padding-right: 50px; */
-                margin: auto;
+            #chotu {
+                padding-top: 30px;
+                height: 50vh;
+                width: 50vw;
             }
-            #chotucol1{
+
+            #chotucol1 {
                 /* font-size: 2rem; */
                 /* padding-right: 50px; */
-                padding-top: 50px;
+                padding-top: 30px;
                 margin: auto;
             }
-            #chotucol2{
+
+            #chotucol2 {
                 font-size: 2rem;
                 /* padding-right: 50px; */
                 /* padding-top: 150px; */
                 margin: auto;
             }
 
-            #chotupara{
+            #chotupara {
                 font-size: 1.5rem;
                 /* padding-right: 50px; */
                 /* color: red; */
                 margin: auto;
             }
+
             /* #chotuimg{
                 height: 213px;
                 width: 203px;
             } */
 
         }
-        
     </style>
 
 </head>
@@ -92,18 +95,18 @@
 
             <div class="header-nav__content">
                 <h3 style="color: #00a9fd">OpenCode'19</h3>
-                
+
                 <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#register" title="register">Register</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="services">Our Goals</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">Previous Projects</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                    <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll" href="#register" title="register">Register</a></li>
+                    <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll" href="#services" title="services">Our Goals</a></li>
+                    <li><a class="smoothscroll" href="#works" title="works">Previous Projects</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
                 </ul>
-    
+
                 <p>Welcome to OpenCode'19! Your journey into the world of open-source development begins here.</p>
-    
+
                 <!-- <ul class="header-nav__social">
                     <li>
                         <a href="#0"><i class="fab fa-facebook"></i></a>
@@ -132,36 +135,41 @@
 
     </header> <!-- end s-header -->
 
-    
+
 
 
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src=""  data-position-y=top>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="" data-position-y=top>
 
         <!-- <div class="shadow-overlay"></div> -->
 
         <div id="particles-js" class="home-content">
-			<!-- particles.js container -->
+            <!-- particles.js container -->
 
-<!-- stats - count particles -->
+            <!-- stats - count particles -->
 
-<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<!-- stats.js lib -->
+            <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+            <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <!-- stats.js lib -->
 
-<div class="animated fadeInUp delay-2s logo">
-	
-			<img  src="images/Logo1.png">
-			</div>
-<div class="animated fadeIn delay-3s github">
-	<img  src="images/GitHub.png"><br></div>
-	<div class="animated fadeIn delay-3s presents"><p>Presents</p></div>
-<div class="animated fadeIn delay-4s title">
-			Opencode '19</div>
-			
-			<!--
+            <div class="animated fadeIn github">
+                <img src="images/GitHub.png"><br></div>
+
+            <div class="animated fadeIn presents">
+                <p>Presents</p>
+            </div>
+
+
+            <div id="chotu" class="animated fadeInUp logo">
+
+                <img src="images/Logo1.png">
+            </div>
+            <div class="animated fadeIn title">
+                Opencode '19</div>
+
+            <!--
 <div class="animated fadeIn delay-3s buttons">
 	<div class="ui secondary button"><a href="">
 		<i class="github icon"></i>
@@ -174,14 +182,14 @@
 			</div>
                              
         </div> <!-- end home-content -->
-		
-        <!-- <ul class="home-sidelinks">
+
+            <!-- <ul class="home-sidelinks">
             <li><a class="smoothscroll" href="#about">About<span>who we are</span></a></li>
             <li><a class="smoothscroll" href="#services">Services<span>what we do</span></a></li>
             <li><a  class="smoothscroll" href="#contact">Contact<span>get in touch</span></a></li>
         </ul> end home-sidelinks -->
 
-        <!-- <ul class="home-social">
+            <!-- <ul class="home-social">
             <li class="home-social-title">Follow Us</li>
             <li><a href="#0">
                 <i class="fab fa-facebook"></i>
@@ -200,34 +208,38 @@
     </section> <!-- end s-home -->
 
     <!-- ====================REGISTER===================================== -->
-    
-        <div class="ui stackable grid container" id="register" style="margin-top: 100px;">
-            <div class="two wide column"></div>
-            <div class="six wide column" style="text-align:center">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV63tSCSey25-CrDljYdi5VkcwhiGKSopWF5X-_V5GSCQuuA/viewform?usp=sf_link" target="_blank">
-                    <div class="ui animated massive button" style="background: linear-gradient(to right, #00a9fd, #006bd1); color: white;" tabindex="0">
-                            <div class="visible content">Participant Registration</div>
-                            <div class="hidden content">
-                              <i class="right arrow icon"></i>
-                            </div>
-                        </div>            
-        
-                </a>
-            </div>
-            <div class="six wide column" style="text-align:center">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUJOEGb_CrG-gfwHttqQlXA3m7yjuhy5bdTHgDfrIrRNiRzA/viewform?usp=sf_link" target="_blank">
-                        <div class="ui animated massive button" style="background: linear-gradient(to right, #00a9fd, #006bd1); color: white;" tabindex="0">
-                                <div class="visible content">Mentor Registration</div>
-                                <div class="hidden content">
-                                  <i class="right arrow icon"></i>
-                                </div>
-                            </div>            
-            
-                    </a>
-                </div>
-                <div class="two wide column"></div>
 
-            <!-- <div class="ui animated blue massive button" tabindex="0">
+    <div class="ui stackable grid container" id="register" style="margin-top: 100px;">
+        <div class="two wide column"></div>
+        <div class="six wide column" style="text-align:center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV63tSCSey25-CrDljYdi5VkcwhiGKSopWF5X-_V5GSCQuuA/viewform?usp=sf_link"
+                target="_blank">
+                <div class="ui animated massive button" style="background: linear-gradient(to right, #00a9fd, #006bd1); color: white;"
+                    tabindex="0">
+                    <div class="visible content">Participant Registration</div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+                </div>
+
+            </a>
+        </div>
+        <div class="six wide column" style="text-align:center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUJOEGb_CrG-gfwHttqQlXA3m7yjuhy5bdTHgDfrIrRNiRzA/viewform?usp=sf_link"
+                target="_blank">
+                <div class="ui animated massive button" style="background: linear-gradient(to right, #00a9fd, #006bd1); color: white;"
+                    tabindex="0">
+                    <div class="visible content">Mentor Registration</div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+                </div>
+
+            </a>
+        </div>
+        <div class="two wide column"></div>
+
+        <!-- <div class="ui animated blue massive button" tabindex="0">
                 <div class="visible content">Participant Registration</div>
                 <div class="hidden content">
                   <i class="right arrow icon"></i>
@@ -240,8 +252,8 @@
                   <i class="right arrow icon"></i>
                 </div>
             </div> -->
-        </div>
-    
+    </div>
+
 
     <!-- about
     ================================================== -->
@@ -263,7 +275,7 @@
         </div>  -->
 
         <div class="row">
-                
+
             <div class="about-process process block-1-2 block-tab-full">
 
                 <div class="process__vline-left"></div>
@@ -272,7 +284,8 @@
                 <div class="col-block process__col" data-item="1" data-aos="fade-up">
                     <div class="process__text">
                         <h4>Scoring Criteria</h4>
-                        <p>Each project will have issues open in it of varying difficulty and each issue will have points associated with it as below:</p>
+                        <p>Each project will have issues open in it of varying difficulty and each issue will have
+                            points associated with it as below:</p>
                         <ul>
                             <li>Rookie: 10 points</li>
                             <li>Skilled: 20 points</li>
@@ -286,8 +299,11 @@
                         <h4>How this works</h4>
                         <ul>
                             <li>Participants are required to solve the issues and earn points.</li>
-                            <li>At the end of competition, winner will be declared from top 5 by judging the quality of issues solved by them.<strong>So the participant with the most points need not be the winner.</strong></li>
-                            <li>Projects registered for the event can be solved to earn points. All of them can be found at OpenCode Organisation with label opencode.</li>
+                            <li>At the end of competition, winner will be declared from top 5 by judging the quality of
+                                issues solved by them.<strong>So the participant with the most points need not be the
+                                    winner.</strong></li>
+                            <li>Projects registered for the event can be solved to earn points. All of them can be
+                                found at OpenCode Organisation with label opencode.</li>
                         </ul>
                     </div>
                 </div>
@@ -350,15 +366,15 @@
         <div class="row services-list block-1-2 block-m-1-2 block-tab-full">
 
             <div class="col-block service-item" data-aos="fade-up" style="padding-bottom: 40px;">
-                    <div class="service-icon  service-icon--web-design">
-                        <i class="icon-earth"></i>
-                    </div>  
-                    <div class="service-text">
-                        <h3 class="h4" style="padding-top: 10px;">Awareness</h3>
-                        <p>Increase awareness about the world of open source.</p>
-                    </div>                   
+                <div class="service-icon  service-icon--web-design">
+                    <i class="icon-earth"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h4" style="padding-top: 10px;">Awareness</h3>
+                    <p>Increase awareness about the world of open source.</p>
+                </div>
             </div>
-        
+
 
             <div class="col-block service-item " data-aos="fade-up" style="padding-bottom: 40px;">
                 <div class="service-icon service-icon--brand-identity">
@@ -403,7 +419,7 @@
                     <p>Help mentors to improve their guiding skills.</p>
                 </div>
             </div>
-    
+
             <!-- <div class="col-block service-item" data-aos="fade-up">
                 <div class="service-icon service-icon--mobile-dev">
                     <i class="icon-lego-block"></i>
@@ -425,7 +441,7 @@
     <!-- works
     ================================================== -->
     <section id='works' class="s-works">
-                
+
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full" id="work-head">
                 <!-- <h3 class="subhead">Featured Works</h3> -->
@@ -441,11 +457,10 @@
 
                         <div class="item-folio__thumb">
                             <a class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/pd1.png" 
-                                     srcset="images/portfolio/pd1.png 1x" alt="">
+                                <img src="images/portfolio/pd1.png" srcset="images/portfolio/pd1.png 1x" alt="">
                             </a>
                         </div>
-                        
+
                         <!-- <a href="https://google.com">please chal jaa</a> -->
 
                         <div class="item-folio__text">
@@ -474,8 +489,7 @@
 
                         <div class="item-folio__thumb">
                             <a class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/apkfinal.jpg" 
-                                     srcset="images/portfolio/apkfinal.jpg 1x" alt="">
+                                <img src="images/portfolio/apkfinal.jpg" srcset="images/portfolio/apkfinal.jpg 1x" alt="">
                             </a>
                         </div>
 
@@ -500,8 +514,7 @@
 
                         <div class="item-folio__thumb">
                             <a class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/ld.png"
-                                     srcset="images/portfolio/ld.png 1x" alt="">
+                                <img src="images/portfolio/ld.png" srcset="images/portfolio/ld.png 1x" alt="">
                             </a>
                         </div>
 
@@ -527,8 +540,7 @@
 
                         <div class="item-folio__thumb">
                             <a class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/lcv.png"
-                                     srcset="images/portfolio/lcv.png 1x" alt="">
+                                <img src="images/portfolio/lcv.png" srcset="images/portfolio/lcv.png 1x" alt="">
                             </a>
                         </div>
 
@@ -555,8 +567,7 @@
 
                         <div class="item-folio__thumb">
                             <a class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/hox.png"
-                                     srcset="images/portfolio/hox.png 1x" alt="">
+                                <img src="images/portfolio/hox.png" srcset="images/portfolio/hox.png 1x" alt="">
                             </a>
                         </div>
 
@@ -569,7 +580,8 @@
                             </p>
                         </div>
 
-                        <a href="https://github.com/Anupam-dagar/Portfolio-Generator" class="item-folio__project-link" id="hoxnox">
+                        <a href="https://github.com/Anupam-dagar/Portfolio-Generator" class="item-folio__project-link"
+                            id="hoxnox">
                             Project Link
                         </a>
 
@@ -581,8 +593,7 @@
 
                         <div class="item-folio__thumb">
                             <a class="thumb-link" data-size="1050x700">
-                                <img src="images/portfolio/opn.png"
-                                     srcset="images/portfolio/opn.png 1x" alt="">
+                                <img src="images/portfolio/opn.png" srcset="images/portfolio/opn.png 1x" alt="">
                             </a>
                         </div>
 
@@ -591,7 +602,8 @@
                                 OpenNews
                             </h3>
                             <p class="item-folio__cat">
-                                A simple website built using Vue.js which displays the top 5 news from various news sources.
+                                A simple website built using Vue.js which displays the top 5 news from various news
+                                sources.
                             </p>
                         </div>
 
@@ -620,19 +632,26 @@
 
                     <div class="testimonials__slide">
                         <img src="images/avatars/jc.jpg" alt="Author image" class="testimonials__avatar">
-                        <p> People used to take any issue that comes their way, be it something they even haven’t heard about. I guess, that’s the beauty of OpenCode, it helps us let go of our fear of tackling problems without thinking about whether we can solve them or not.</p>
+                        <p> People used to take any issue that comes their way, be it something they even haven’t heard
+                            about. I guess, that’s the beauty of OpenCode, it helps us let go of our fear of tackling
+                            problems without thinking about whether we can solve them or not.</p>
                         <div class="testimonials__author">
-                            Jigar Chavada 
-                            <span>OpenCode'18, Overall Winner</span><span><a href="https://medium.com/@chavada.jigar.3/my-experience-of-opencode18-4433b6eaf823" target="_blank">Read the full blog</a></span>
+                            Jigar Chavada
+                            <span>OpenCode'18, Overall Winner</span><span><a href="https://medium.com/@chavada.jigar.3/my-experience-of-opencode18-4433b6eaf823"
+                                    target="_blank">Read the full blog</a></span>
                         </div>
                     </div> <!-- end testimonials__slide -->
 
                     <div class="testimonials__slide">
                         <img src="images/avatars/vp.jpg" alt="Author image" class="testimonials__avatar">
-                        <p>Before Opencode I had a vague understanding of git and some basic knowledge of Python and Web development. But towards the end of it I got introduced to many technologies and coding practices. Thus, I can safely say that I have taken a huge step towards excelling as a developer.</p>
+                        <p>Before Opencode I had a vague understanding of git and some basic knowledge of Python and
+                            Web development. But towards the end of it I got introduced to many technologies and coding
+                            practices. Thus, I can safely say that I have taken a huge step towards excelling as a
+                            developer.</p>
                         <div class="testimonials__author">
                             Vishal Pani
-                            <span>OpenCode'18, Top Scorer</span><span><a href="https://medium.com/@panivishal17/my-journey-with-opencode18-5336ea8c9f07" target="_blank">Read the full blog</a></span>
+                            <span>OpenCode'18, Top Scorer</span><span><a href="https://medium.com/@panivishal17/my-journey-with-opencode18-5336ea8c9f07"
+                                    target="_blank">Read the full blog</a></span>
                         </div>
                     </div> <!-- end testimonials__slide -->
 
@@ -647,33 +666,43 @@
 
                     <div class="testimonials__slide">
                         <img src="images/avatars/rm.jpg" alt="Author image" class="testimonials__avatar">
-                        <p>It was a great experience for me. I enjoyed a lot doing different things for the competition like opening issues, solving them, claiming issues opened by the organizers, creating pull requests. It gave me real happiness whenever my PR was merged.</p>
+                        <p>It was a great experience for me. I enjoyed a lot doing different things for the competition
+                            like opening issues, solving them, claiming issues opened by the organizers, creating pull
+                            requests. It gave me real happiness whenever my PR was merged.</p>
                         <div class="testimonials__author">
                             Ritika Motwani
-                            <span>OpenCode'18, Special Girls Prize</span><span><a href="https://medium.com/my-experience-with-opencode-2018/my-experience-of-opencode-2018-7a26415da76" target="_blank">Read the full blog</a></span>
+                            <span>OpenCode'18, Special Girls Prize</span><span><a href="https://medium.com/my-experience-with-opencode-2018/my-experience-of-opencode-2018-7a26415da76"
+                                    target="_blank">Read the full blog</a></span>
                         </div>
                     </div> <!-- end testimonials__slide -->
 
                     <div class="testimonials__slide">
                         <img src="images/avatars/eb.jpg" alt="Author image" class="testimonials__avatar">
-                        <p>I had joined GitHub just two weeks before OpenCode had started. Initially, I felt quite underconfident while taking up the issues. I went from being that underconfident guy to the guy who’s now comfortable enough to explore the beautiful world of open-source.</p>
+                        <p>I had joined GitHub just two weeks before OpenCode had started. Initially, I felt quite
+                            underconfident while taking up the issues. I went from being that underconfident guy to the
+                            guy who’s now comfortable enough to explore the beautiful world of open-source.</p>
                         <div class="testimonials__author">
                             Ekansh Bansal
-                            <span>OpenCode'18, Top Contributor</span><span><a href="https://medium.com/@ekanshbansal/my-experience-with-opencode18-5271f9d10d44" target="_blank">Read the full blog</a></span>
+                            <span>OpenCode'18, Top Contributor</span><span><a href="https://medium.com/@ekanshbansal/my-experience-with-opencode18-5271f9d10d44"
+                                    target="_blank">Read the full blog</a></span>
                         </div>
                     </div> <!-- end testimonials__slide -->
-                    
+
                     <div class="testimonials__slide">
                         <img src="images/avatars/ag.jpg" alt="Author image" class="testimonials__avatar">
                         <!-- <p>I had joined GitHub just two weeks before OpenCode had started. Initially, I felt quite underconfident while taking up the issues. I went from being that underconfident guy to the guy who’s now comfortable enough to explore the beautiful world of open-source.</p> -->
-                        <p>I started with adding myself as contestant in opencode collaborative website and then the journey to contribute more and more started. OpenCode ended with introducing me to new and exciting stuff like loaders, cool libraries like particle.js, making game with the help of javascript and many more things.</p>
+                        <p>I started with adding myself as contestant in opencode collaborative website and then the
+                            journey to contribute more and more started. OpenCode ended with introducing me to new and
+                            exciting stuff like loaders, cool libraries like particle.js, making game with the help of
+                            javascript and many more things.</p>
                         <div class="testimonials__author">
                             Ananya Agrawal
-                            <span>OpenCode'18, Top Contributor</span><span><a href="https://medium.com/@ananyaagrawal125/experience-with-opencode-18-4df353b93e95" target="_blank">Read the full blog</a></span>
+                            <span>OpenCode'18, Top Contributor</span><span><a href="https://medium.com/@ananyaagrawal125/experience-with-opencode-18-4df353b93e95"
+                                    target="_blank">Read the full blog</a></span>
                         </div>
                     </div> <!-- end testimonials__slide -->
-                    
-                    
+
+
                 </div> <!-- end testimonials__slider -->
 
             </div> <!-- end testimonials -->
@@ -713,7 +742,9 @@
     <!-- Sponsors -->
     <section data-section="sponsor">
         <div class="sponsor-container">
-            <div class="sponsor-heading"><h2 style="font-weight: bold">SPONSORS</h2></div>
+            <div class="sponsor-heading">
+                <h2 style="font-weight: bold">SPONSORS</h2>
+            </div>
         </div>
         <div class="sponsors">
             <div class="sponsor-1">
@@ -791,9 +822,12 @@
 
         <div class="row">
             <div class="col-full cl-copyright">
-                <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i style="color: red;" class="fa fa-heart" aria-hidden="true"></i> by <span style="color:white">Team OpenCode.</span> 
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span> 
+                <span>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i style="color: red;"
+                        class="fa fa-heart" aria-hidden="true"></i> by <span style="color:white">Team OpenCode.</span>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
             </div>
         </div>
 
@@ -847,7 +881,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- preloader
     ================================================== -->
     <div id="preloader">
-        <div id="loader">            
+        <div id="loader">
         </div>
     </div>
 
@@ -867,22 +901,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         var btn5 = $("#lucidcv");
         var btn6 = $("#opennews");
 
-        btn1.click(function(){
+        btn1.click(function () {
             window.open('https://github.com/opencode18/ProDesigner', '_blank');
         })
-        btn2.click(function(){
+        btn2.click(function () {
             window.open('https://github.com/GeekHaven/Aparoksha-18', '_blank');
         })
-        btn3.click(function(){
+        btn3.click(function () {
             window.open('https://github.com/CosmicCoder96/longDrive', '_blank');
         })
-        btn4.click(function(){
+        btn4.click(function () {
             window.open('https://github.com/Anupam-dagar/Portfolio-Generator', '_blank');
         })
-        btn5.click(function(){
+        btn5.click(function () {
             window.open('https://github.com/aswinzz/LucidCV', '_blank');
         })
-        btn6.click(function(){
+        btn6.click(function () {
             window.open('https://github.com/opencode18/OpenNews', '_blank');
         })
 
