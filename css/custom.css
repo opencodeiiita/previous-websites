@@ -64,12 +64,12 @@ canvas {
 }
 /*....*/
 .logo{
-padding-top: 200px;	
+padding-top: 270px;	
 align-items: center;
   display: flex;
   justify-content: center;
-	width: 27vw;
-	height: 27vh;
+	width: 22vw;
+	height: 22vh;
 	margin-left: auto;
 	margin-right: auto;
 	
@@ -113,7 +113,7 @@ align-items: center;
 .title{
 	font-family: 'Lato';
 	height: 100px;
-	padding-top: 15px;
+	margin-top: 250px;
 align-items: center;
   display: flex;
   justify-content: center;
@@ -130,7 +130,7 @@ align-items: center;
 .github{
 	color: white;
 	width: 200px;
-	margin-top: 200px;
+	margin-top: 50px;
 align-items: center;
   display: flex;
   justify-content: center;
