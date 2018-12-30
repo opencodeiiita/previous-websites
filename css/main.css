@@ -2508,7 +2508,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-works {
   background: #ffffff;
-  padding: 18rem 0 24rem;
+  padding: 18rem 0 15rem;
   position: relative;
 }
 #work-head{
@@ -3076,7 +3076,7 @@ html.no-csstransitions .home-content__main {
   bottom: 0;
 }
 .sponsors{
-  margin: 0 22vw 10vw 22vw;
+  margin: 0 22vw 5vw 22vw;
 }
 .sponsor-1{
   display: inline-block;

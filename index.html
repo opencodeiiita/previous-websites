@@ -8,11 +8,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131397303-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-131397303-1');
+        gtag('config', 'UA-131397303-1');
     </script>
 
     <meta charset="utf-8">
@@ -55,6 +55,11 @@
                 height: 50vh;
                 width: 50vw;
             }
+
+            #sponsor_responsive {
+                font-size: 1.2rem;
+            }
+
 
             #chotu1 {
                 margin-top: 17px;
@@ -761,8 +766,26 @@
                 </a>
             </div>
             <div class="sponsor-2" style="margin-left: auto; margin-right: auto">
-                <a href="https://zulipchat.com/"  target="_blank">
+                <a href="https://zulipchat.com/" target="_blank">
                     <img src="images/sponsors/zulip-logo.png">
+                </a>
+            </div>
+        </div>
+        <div style="text-align: center">
+            <div id="sponsor_responsive" class="testimonials__author" style="padding-bottom: 25px;">
+                Interested in sponsoring us?
+                <br>
+                Take a look at our sponsorship brochure for more details!
+            </div>
+            <div style="text-align:center; padding-bottom: 50px;">
+                <a href="sponsorship_brochure.pdf" target="_blank">
+                    <div class="ui animated massive button" style="background: linear-gradient(to right, #00a9fd, #006bd1); color: white;"
+                        tabindex="0">
+                        <div class="visible content">Sponsorship Brochure</div>
+                        <div class="hidden content">
+                            <i class="right arrow icon"></i>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
