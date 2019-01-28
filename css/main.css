@@ -3086,6 +3086,11 @@ html.no-csstransitions .home-content__main {
   height: 12vw;
   display: block;
 }
+
+.sponsor-3{
+  width: 300px;
+  margin-top: 50px;
+}
 @media only screen and (max-width: 950px){
   .sponsor-heading h2:after{
     width: 17vw;
