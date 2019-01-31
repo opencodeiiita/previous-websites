@@ -2572,6 +2572,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__thumb img {
+ padding:50px 50px;
   vertical-align: top;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
